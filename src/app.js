@@ -2,8 +2,8 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors"
 //rutas
-import Productos from "./routes/productos"
-import Categorias from "./routes/categoria"
+import productosRoutes from "./routes/productos.js"
+import categoriasRoutes from "./routes/categoria.js"
 
 
 const app = express();
@@ -16,8 +16,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors())
 
-app.get("/productos",Productos)
-app.get("/categorias",Categorias)
+app.use(productosRoutes)
+app.use(categoriasRoutes)
 
 
 app.get("*", (req, res) => {
