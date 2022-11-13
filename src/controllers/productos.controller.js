@@ -1,5 +1,6 @@
+//importación conexión
 import { getConnection } from "./../database/database";
-
+//consulta mostrar los productos
 const getProductos = async (req, res) => {
   try {
     const connection = await getConnection();
@@ -10,7 +11,7 @@ const getProductos = async (req, res) => {
     res.send(error.message);
   }
 };
-
+//consulta filtrar datos de productos
 const filterProductos = async (req, res) => {
   try {
     const connection = await getConnection();
@@ -24,6 +25,7 @@ const filterProductos = async (req, res) => {
     res.send(error.message);
   }
 };
+//exportación de métodos
 export const methods = {
   getProductos,filterProductos
 };

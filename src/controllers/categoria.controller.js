@@ -1,5 +1,7 @@
+//importación conexión
 import { getConnection } from "./../database/database";
 
+//consulta mostrar las categorias
 const getCategorias = async (req, res) => {
   try {
     const connection = await getConnection();
@@ -10,6 +12,7 @@ const getCategorias = async (req, res) => {
     res.send(error.message);
   }
 };
+//consulta filtrar datos categorias
 const filterCategorias = async (req, res) => {
   try {
     const connection = await getConnection();
@@ -21,7 +24,7 @@ const filterCategorias = async (req, res) => {
     res.send(error.message);
   }
 };
-
+//exportación de métodos
 
 export const methods = {
   getCategorias,filterCategorias

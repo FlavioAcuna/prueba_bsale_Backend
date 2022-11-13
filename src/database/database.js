@@ -1,7 +1,8 @@
+//importaciones
 import mysql from "promise-mysql";
 import config from "./../config";
 import pool from "promise-mysql";
-
+//pool conexión 
 const connections = pool.createPool({
   host: config.host,
   database: config.database,
@@ -11,11 +12,11 @@ const connections = pool.createPool({
   acquireTimeout: 4000,
 });
 
-
+//devolver conexión
 const getConnection = () => {
   return connections;
 };
-
+//exportar conexión
 module.exports = {
   getConnection,
 };
