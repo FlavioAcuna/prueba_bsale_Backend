@@ -1,6 +1,6 @@
 //importaciones
 import mysql from "promise-mysql";
-import config from "./../config";
+import config from "./../config.js";
 import pool from "promise-mysql";
 //pool conexión 
 const connections = pool.createPool({

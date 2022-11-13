@@ -1,5 +1,5 @@
 //importación conexión
-import { getConnection } from "./../database/database";
+import { getConnection } from "./../database/database.js";
 
 //consulta mostrar las categorias
 const getCategorias = async (req, res) => {
