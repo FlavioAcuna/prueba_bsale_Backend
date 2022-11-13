@@ -12,11 +12,8 @@ const connections = pool.createPool({
   acquireTimeout: 4000,
 });
 
-//devolver conexión
-const getConnection = () => {
-  return connections;
-};
+
 //exportar conexión
-module.exports = {
-  getConnection,
+export function getConnection() {
+  return connections;
 };
