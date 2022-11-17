@@ -6,22 +6,23 @@
 _Ejercio postulacion Bsale el cual consiste en la creacion de una tienda web que obtendra los datos de una api rest_
 
 ## Índice
-* [Comenzando](#Comenzando-)
-* [Objetivo](#Objetivo-)
-* [Productos](#Productos) 
+* [Comenzando](#comenzando-)
+* [Objetivo](#objetivo-)
+* [Productos](#productos) 
 * [GET lista de productos](#get-lista-de-productos)
 * [GET productos por nombre](#get-productos-por-nombre)
-* [Categorias](#Categorias)
+* [Categorias](#categorias)
 * [GET lista de categorias](#get-lista-de-categorias)
 * [GET de una categoria](#get--de-una-categoria)
 * [Despliegue 📦](#despliegue-)
+* [Ejecución](#ejecución)
 * [Construido con 🛠️](#construido-con-%EF%B8%8F)
 * [Autor ✒️](#autor-%EF%B8%8F)
 
 
 ### Objetivo 📋
 
-_Entregar los datos para que se puedan consumir desde una aplicacion web(Frontend)_
+_Entregar los datos para que se puedan consumir desde una aplicacion web(Frontend) en la cual se deberan mostrar los productos filtrados por categorias o buscar por nombre de producto._
 
 ### Productos 
 
@@ -131,7 +132,15 @@ DATABASE=""
 USERNAME=""
 PASSWORD=""
 ```
-
+# _Ejecución_<br>
+_Para levantar la aplicacion se deberan ejecutar los siguentes comandos_
+```
+cd ruta-donde-almacenar
+git clone https://github.com/FlavioAcuna/prueba_bsale_Backend.git
+cd `prueba_bsale_Backend/`
+npm install
+npm start
+```
 ## Construido con 🛠️
 
 * JavaScript - Lenguaje utilizado
